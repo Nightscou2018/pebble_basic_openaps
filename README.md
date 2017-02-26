@@ -69,8 +69,6 @@ else:
 
 Notifications(pebble).send_notification(msg_line1, msg_line2)
 
-#if run manually, these are the lines that appear in the pebble but swon on the terminal:
-
 print ("----------")
 print (msg_line1)
 print (msg_line2)
