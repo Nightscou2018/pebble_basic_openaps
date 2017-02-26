@@ -10,10 +10,10 @@ The intended message in the pebble contains two lines:
 
 example below:
 
-----------
-10:27 (1min.)
-82/-0.583/0.0
-----------
+        ----------
+        10:27 (1min.)
+        82/-0.583/0.0
+        ----------
 
 
 
