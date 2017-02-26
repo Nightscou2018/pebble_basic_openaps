@@ -68,6 +68,7 @@ example below:
         with open ("/root/myopenaps/monitor/iob.json")as IOB_Data:
                 d= json.load(IOB_Data)
                 IOB=d[0]["iob"]
+                IOB=round(IOB,2)
 
         with open ("/root/myopenaps/monitor/temp_basal.json")as temp_basal_Data:
                 d= json.load(temp_basal_Data)
