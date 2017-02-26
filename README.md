@@ -18,7 +18,7 @@ example below:
 If the time elapsed from the last BG time is more than 25 minutes the second line of the message will be different:
 
         Line 1: BG time, then between parenthesis the time elapsed from BG time to now expressed in minutes
-        Line 2: Time since last BG expressed in min --> check why (hostname)
+        Line 2: Time since last BG expressed in min -> check why (hostname)
         
 example below:
 
