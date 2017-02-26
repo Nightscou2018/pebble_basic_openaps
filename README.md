@@ -13,7 +13,7 @@ nfig hci0 up
 systemctl start bluetooth.service #(part of pancreable instructions..not sure what this is for)
 rfcomm bind hci0 B0:B4:48:F4:F0:C5 #this links to the MAC of the pebble watch
 
-Pebble_Basic_Openaps.py
+#Pebble_Basic_Openaps.py
 
 
 import time
@@ -68,7 +68,6 @@ else:
         msg_line2 = str(Time_Gap_Min) + "min" + "->check why" + " (" + hostname + ")"
 
 Notifications(pebble).send_notification(msg_line1, msg_line2)
-#Notifications(pebble).send_notification(sys.argv[1], sys.argv[2])
 
 #if run manually, these are the lines that appear in the pebble but swon on the terminal:
 
