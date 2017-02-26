@@ -1,23 +1,17 @@
 # pebble_basic_openaps
 Sending basic update messages to pebble from an openaps rig
 
-
-Pebble_Basic_Openaps
-
-Dependencies:
+#Dependencies:
 
 Openaps
 Bluez
 Libpebble2
 
-Startup
+#Startup
 
 nfig hci0 up
-
-#systemctl start bluetooth.service #(part of pancreable instructions..not sure what this is for)
-
-rfcomm bind hci0 B0:B4:48:F4:F0:C5 
-#this links to the MAC of the pebble watch
+systemctl start bluetooth.service #(part of pancreable instructions..not sure what this is for)
+rfcomm bind hci0 B0:B4:48:F4:F0:C5 #this links to the MAC of the pebble watch
 
 Pebble_Basic_Openaps.py
 
