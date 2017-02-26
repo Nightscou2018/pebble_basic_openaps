@@ -1,5 +1,24 @@
 # pebble_basic_openaps
 Sending basic update messages to pebble from an openaps rig
+Simple aletrnative to have just the critical information in the pebble
+Meant to be added as a cronjob every 5 min
+
+The intended message in the pebble contains two lines:
+
+Line 1: BG time (<time elapsed from now expressed in minutes>)
+Line 2: BG/IOB/Temp Basal
+
+example below:
+
+----------
+10:27 (1min.)
+82/-0.583/0.0
+----------
+
+
+
+
+
 
 #Dependencies:
 
@@ -30,7 +49,9 @@ Sending basic update messages to pebble from an openaps rig
         pebble.connect()
         pebble.run_async()
         print(pebble.watch_info.serial)
+        
         hostname= socket.gethostname()
+        
         with open ("/root/myopenaps/monitor/glucose.json")as BG_Data:
                 d= json.load(BG_Data)
                 BG=d[0]["glucose"]
@@ -53,6 +74,7 @@ Sending basic update messages to pebble from an openaps rig
         Time_Gap_Min = int(h)/60+int(m)
 
         msg_line1= str(Time_BG[11:16]) + " (" + str(Time_Gap_Min) + "min.)"
+        
         if Time_Gap_Min < 25:
                 msg_line2= str(BG) + "/" + str(IOB) + "/" + str(temp_basal)
         else:
