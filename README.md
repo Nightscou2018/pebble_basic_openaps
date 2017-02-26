@@ -5,7 +5,7 @@ Meant to be added as a cronjob every 5 min
 
 The intended message in the pebble contains two lines:
 
-Line 1: BG time (<time elapsed from now expressed in minutes>)
+Line 1: BG time, then between parenthesis, the time elapsed from now expressed in minutes
 Line 2: BG/IOB/Temp Basal
 
 example below:
