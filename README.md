@@ -50,3 +50,5 @@ example below:
         rfcomm bind hci0 B0:B4:48:F4:F0:C5 #replace the MAC address with that of your pebble
 
 Add as a startup script
+
+![alt tag](http://url/to/img.png)
