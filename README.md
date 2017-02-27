@@ -22,7 +22,7 @@ example below:
 
 If the time elapsed from the last BG time is more than 25 minutes the message will be different:
 
-        Line 1: BG time, then between parenthesis the time elapsed from BG time to now expressed in minutes
+        Line 1: Data is <Time elapsed from BG time to now expressed in minutes> Old
         Line 2: hostname
         
 example below:
