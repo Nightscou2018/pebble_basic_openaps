@@ -1,12 +1,12 @@
 # pebble_basic_openaps
 
-**I am in the innital testing of this idea**
-
 Sending basic update messages to pebble from an openaps rig
 
 Takes advantage of small pebble displays such as newer timeround models
 
 Simple aletrnative to have just the critical information in the pebble. Meant to be added as a cronjob every 5 min
+
+**I am in the innital testing of this idea**
 
 The intended message in the pebble contains two lines:
 
