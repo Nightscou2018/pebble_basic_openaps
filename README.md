@@ -10,8 +10,8 @@ Simple aletrnative to have just the critical information in the pebble. Meant to
 
 The intended message in the pebble contains two lines:
 
-        Line 2: BG(BG Delta)/IOB/Temp Basal
-        Line 1: BG time, then between parenthesis the time elapsed from BG time to now expressed in minutes
+        Line 1: BG(BG Delta)/IOB/Temp Basal
+        Line 2: BG time, then between parenthesis the time elapsed from BG time to now expressed in minutes
   
 example below:
 
@@ -20,7 +20,7 @@ example below:
         10:27 (1min.)
         ----------
 
-If the time elapsed from the last BG time is more than 25 minutes the second line of the message will be different:
+If the time elapsed from the last BG time is more than 25 minutes the message will be different:
 
         Line 1: BG time, then between parenthesis the time elapsed from BG time to now expressed in minutes
         Line 2: hostname
