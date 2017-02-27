@@ -43,9 +43,8 @@ example below:
 
 #Run before sending messages to the pebble 
 
-Better add as a startup script
-
         nfig hci0 up
-        systemctl start bluetooth.service #(part of pancreable instructions..not sure what this is for)
+        systemctl start bluetooth.service 
         rfcomm bind hci0 B0:B4:48:F4:F0:C5 #replace the MAC address with that of your pebble
 
+Add as a startup script
