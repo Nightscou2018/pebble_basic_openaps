@@ -6,7 +6,7 @@ Takes advantage of small pebble displays such as newer timeround models
 
 Simple aletrnative to have just the critical information in the pebble. Meant to be added as a cronjob every 5 min
 
-**I am in the innital testing of this idea**
+**/***I am in the innital testing of this idea**
 
 The intended message in the pebble contains two lines:
 
