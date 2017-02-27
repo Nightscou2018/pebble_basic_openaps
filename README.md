@@ -10,7 +10,7 @@ Takes advantage of small pebble displays such as newer timeround models
 
 Simple aletrnative to have just the critical information in the pebble. Meant to be added as a cronjob every 5 min
 
-![alt tag](https://github.com/betluis/pebble_basic_openaps/blob/master/picture_1.jpg | width=48)
+![alt tag](https://github.com/betluis/pebble_basic_openaps/blob/master/picture.JPG)
 
 
 **I am in the innital testing of this idea**
