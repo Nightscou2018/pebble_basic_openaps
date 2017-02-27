@@ -41,7 +41,7 @@ example below:
         Bluez
         Libpebble2
 
-#Startup
+#Run before sending messages to the pebble (better add as a startup script)
 
         nfig hci0 up
         systemctl start bluetooth.service #(part of pancreable instructions..not sure what this is for)
