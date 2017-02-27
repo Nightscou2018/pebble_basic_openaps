@@ -51,4 +51,4 @@ example below:
 
 Add as a startup script
 
-![alt tag](http://url/to/img.png)
+![alt tag](https://github.com/betluis/pebble_basic_openaps/blob/master/picture_1.jpg)
