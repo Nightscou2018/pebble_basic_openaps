@@ -23,8 +23,8 @@ The intended message in the pebble contains two lines:
 example below:
 
         ----------
-        82(-1)/-0.583/0.0
-        10:27 (1min.)
+        82(-1)/-0.5/0.0
+        10:27 (1m)
         ----------
 
 If the time elapsed from the last BG time is more than 25 minutes the message will be different:
