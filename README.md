@@ -45,5 +45,5 @@ example below:
 
         nfig hci0 up
         systemctl start bluetooth.service #(part of pancreable instructions..not sure what this is for)
-        rfcomm bind hci0 B0:B4:48:F4:F0:C5 #this links to the MAC of the pebble watch
+        rfcomm bind hci0 B0:B4:48:F4:F0:C5 #replace the MAC address with that of your pebble
 
