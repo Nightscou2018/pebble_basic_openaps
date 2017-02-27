@@ -2,6 +2,8 @@
 
 Sending basic update messages to pebble from an openaps rig
 
+Tested so far with an Edison/Explorer rig
+
 Messages are recieved in pebble watch as notifications
 
 Takes advantage of small pebble displays such as newer timeround models
