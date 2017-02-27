@@ -10,7 +10,7 @@ Simple aletrnative to have just the critical information in the pebble. Meant to
 
 The intended message in the pebble contains two lines:
 
-        Line 2: BG (BG Delta)/IOB/Temp Basal
+        Line 2: BG(BG Delta)/IOB/Temp Basal
         Line 1: BG time, then between parenthesis the time elapsed from BG time to now expressed in minutes
   
 example below:
