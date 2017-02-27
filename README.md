@@ -1,5 +1,6 @@
 # pebble_basic_openaps
-I am in the innital testing of this idea.
+
+**I am in the innital testing of this idea**
 
 Sending basic update messages to pebble from an openaps rig
 
