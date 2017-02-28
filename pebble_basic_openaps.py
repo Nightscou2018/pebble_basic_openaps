@@ -48,7 +48,7 @@ if Time_Gap_Minutes < 15:
 	msg_line2= str(Time_BG_py)[11:16]
 	
 else:
-	msg_line1 = "!Old Data: " + str(Time_Gap_Minutes) + "m"
+	msg_line1 = "Old Data: " + str(Time_Gap_Minutes) + "m"
 	msg_line2 = str(BG) + "(" + str(BG_Delta) +  ")/" + str(IOB) + "/" + str(temp_basal)
 
 Notifications(pebble).send_notification(msg_line1, msg_line2)
