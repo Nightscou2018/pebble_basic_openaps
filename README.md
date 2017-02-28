@@ -13,7 +13,7 @@ Simple aletrnative to have just the critical information in the pebble. Meant to
 ![alt tag](https://github.com/betluis/pebble_basic_openaps/blob/master/picture.JPG)
 
 
-**I am in the innital testing of this idea**
+**I am in the innital testing and iterating of this idea**
 
 The intended message in the pebble contains two lines:
 
