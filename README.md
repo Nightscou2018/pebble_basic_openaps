@@ -27,7 +27,7 @@ example below:
         10:27 (1m)
         ----------
 
-If the time elapsed from the last BG time is more than 25 minutes the message will be different:
+If the time elapsed from the last BG time is more than 15 minutes the message will be different:
 
         Line 1: Data is <Time elapsed from BG time to now expressed in minutes> Old
         Line 2: hostname
