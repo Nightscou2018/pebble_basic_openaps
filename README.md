@@ -32,10 +32,10 @@ Example below:
         10:27 (1m)
         ----------
 
-If the time elapsed from the last BG time is more than 15 minutes the message will be different:
+If the time elapsed from the last BG time is more than 15 minutes (normally glucose data in Openaps is updated every 5 min) the message will be different:
 
         Line 1: Old Data: <Time elapsed from BG time to now expressed in minutes>
-        Line 2: BG time, then between parenthesis the time elapsed from BG time to now expressed in minutes
+        Line 2: BG(BG Delta)/IOB/Temp Basal
         
 Example below:
 
