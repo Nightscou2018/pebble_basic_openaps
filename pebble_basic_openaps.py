@@ -42,7 +42,7 @@ Time_Gap = datetime.datetime.now()-Time_BG_py
 (h, m, s) = str(Time_Gap).split(":")
 Time_Gap_Minutes = int(h)/60+int(m)
 
-if Time_Gap_Minutes < 25:
+if Time_Gap_Minutes < 15:
 
 	msg_line1= str(BG) + "(" + str(BG_Delta) +  ")/" + str(IOB) + "/" + str(temp_basal)
 	msg_line2= str(Time_BG_py)[11:16]
