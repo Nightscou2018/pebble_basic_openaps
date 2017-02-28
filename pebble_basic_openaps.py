@@ -42,8 +42,6 @@ Time_Gap = datetime.datetime.now()-Time_BG_py
 (h, m, s) = str(Time_Gap).split(":")
 Time_Gap_Minutes = int(h)/60+int(m)
 
-Time_Gap_Minutes=26
-
 if Time_Gap_Minutes < 25:
 
 	msg_line1= str(BG) + "(" + str(BG_Delta) +  ")/" + str(IOB) + "/" + str(temp_basal)
