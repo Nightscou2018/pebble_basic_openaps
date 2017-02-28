@@ -42,6 +42,7 @@ Time_Gap = datetime.datetime.now()-Time_BG_py
 (h, m, s) = str(Time_Gap).split(":")
 Time_Gap_Minutes = int(h)/60+int(m)
 
+Time_Gap_Minutes=26
 
 if Time_Gap_Minutes < 25:
 
@@ -49,7 +50,7 @@ if Time_Gap_Minutes < 25:
 	msg_line2= str(Time_BG_py)[11:16]
 	
 else:
-	msg_line1 = "Data " + str(Time_Gap_Minutes) + "m Old"
+	msg_line1 = "!Old Data: " + str(Time_Gap_Minutes) + "m"
 	msg_line2 = str(BG) + "(" + str(BG_Delta) +  ")/" + str(IOB) + "/" + str(temp_basal)
 
 Notifications(pebble).send_notification(msg_line1, msg_line2)
