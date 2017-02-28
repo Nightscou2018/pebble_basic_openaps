@@ -10,7 +10,7 @@ Messages are received in the pebble as notifications
 
 Takes advantage of small pebble displays such as newer timeround models
 
-Simple alternative to have just the critical information in the pebble. Meant to be added as a cronjob every 5 min (or as often as you want, I am testing with 1 min updates)
+Meant to be added as a cronjob every 5 min (or as often as you want, I am testing with 1 min updates)
 
 In the pebble you can define how many minutes the message stays current. After that time (I have it as 3 min for now), the watch sends you to the updates list, where you can scroll down through previous messages. This functionality gives you a quick way to know if your data is current and also to explore recent values.
 
