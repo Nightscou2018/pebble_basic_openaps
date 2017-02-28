@@ -4,7 +4,7 @@ Sending basic update messages to pebble from an openaps rig
 
 When using Medtronic CGM (without an additional device to see BG) it gives the patient a practical way to stay on top of key information without the hassle of accessing the pump.
 
-Particularly usefull when offline or if opening NightScout is not practical or desired for any reason.
+Particularly useful when offline or if opening NightScout is not practical or desired for any reason
  
 Tested so far with an Edison/Explorer rig
 
