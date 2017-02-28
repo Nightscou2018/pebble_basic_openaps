@@ -40,21 +40,17 @@ Time_BG_py=datetime.datetime.strptime(Time_BG, "%Y-%m-%d %H:%M:%S")
 
 Time_Gap = datetime.datetime.now()-Time_BG_py
 (h, m, s) = str(Time_Gap).split(":")
-Time_Gap_Min = int(h)/60+int(m)
+Time_Gap_Minutes = int(h)/60+int(m)
 
 
-msg_line1= str(Time_BG[11:16]) + " (" + str(Time_Gap_Min) + "min.)"
+if Time_Gap_Minutes < 25:
 
-
-
-if Time_Gap_Min < 25:
-
-	msg_line2= str(Time_BG[11:16]) + " (" + str(Time_Gap_Min) + "m)"
 	msg_line1= str(BG) + "(" + str(BG_Delta) +  ")/" + str(IOB) + "/" + str(temp_basal)
+	msg_line2= str(Time_BG_py)[11:16]
 	
 else:
-	msg_line2 = "Data " + str(Time_Gap_Min) + "m Old"
-	msg_line1 = hostname
+	msg_line1 = "Data " + str(Time_Gap_Minutes) + "m Old"
+	msg_line2 = str(BG) + "(" + str(BG_Delta) +  ")/" + str(IOB) + "/" + str(temp_basal)
 
 Notifications(pebble).send_notification(msg_line1, msg_line2)
 #Notifications(pebble).send_notification(sys.argv[1], sys.argv[2])
