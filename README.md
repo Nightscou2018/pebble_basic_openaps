@@ -64,7 +64,6 @@ Add as a startup script
 
 Take advantage of Openaps Oref0 set up script to facilitate Bluetooth configuration
 
-When ready, consider mentioning this project from the Openaps repository documentation
 
 
 
