@@ -53,6 +53,7 @@ Example below:
          sudo apt-get install bluez
                 
         Libpebble2
+         pip install libpebble2
 
 #Run before sending messages to the pebble 
 
