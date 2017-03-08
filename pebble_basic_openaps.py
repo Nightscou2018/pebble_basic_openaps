@@ -1,8 +1,4 @@
-import time
-import sys
-import socket
-import json
-import datetime
+import time, datetime, sys, socket, json
 
 from libpebble2.communication import PebbleConnection
 from libpebble2.communication.transports.serial import SerialTransport
