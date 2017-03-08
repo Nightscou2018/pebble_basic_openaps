@@ -50,6 +50,8 @@ Example below:
 
         Openaps
         Bluez
+         sudo apt-get install bluez
+                
         Libpebble2
 
 #Run before sending messages to the pebble 
