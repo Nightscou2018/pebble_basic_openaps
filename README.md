@@ -54,7 +54,7 @@ Bluez
 
         sudo apt-get install bluez
         
-        to pair your watch, look at section bluetoothctl of instructions in the next link
+        to pair your watch, look at section: "using bluetoothctl" of instructions in the next link
         https://wiki.debian.org/BluetoothUser
                 
 Libpebble2
