@@ -1,12 +1,12 @@
-import time, datetime, sys, socket, json
+import time, datetime, sys, socket, json, libpebble2
 
-from libpebble2.communication import PebbleConnection
+#from libpebble2.communication import PebbleConnection
 from libpebble2.communication.transports.serial import SerialTransport
-from libpebble2.exceptions import TimeoutError
-from libpebble2.services.notifications import Notifications
+#from libpebble2.exceptions import TimeoutError
+#from libpebble2.services.notifications import Notifications
 
 
-pebble = PebbleConnection(SerialTransport("/dev/rfcomm0"))
+pebble = libpebble2.PebbleConnection(SerialTransport("/dev/rfcomm0"))
 pebble.connect()
 pebble.run_async()
 print(pebble.watch_info.serial)
@@ -41,7 +41,7 @@ else:
 	msg_line1 = "Old Data: " + str(Time_Gap_Minutes) + "m"
 	msg_line2 = str(BG) + "(" + str(BG_Delta) +  ")/" + str(IOB) + "/" + str(temp_basal)
 
-Notifications(pebble).send_notification(msg_line1, msg_line2)
+libpebble2.Notifications(pebble).send_notification(msg_line1, msg_line2)
 #Notifications(pebble).send_notification(sys.argv[1], sys.argv[2])
 
 print ("----------")
