@@ -20,7 +20,8 @@ hostname= socket.gethostname()
 with open ("/root/myopenaps/monitor/glucose.json")as BG_Data:
 	d= json.load(BG_Data)
 	BG=d[0]["glucose"]
-	Time_BG=d[0]["display_time"]
+	#Time_BG=d[0]["display_time"]
+	Time_BG=datetime.datetime.strptime((d[0]["display_time"], "%Y-%m-%dT%H:%M:%S")
 	BG_Previous = d[1]["glucose"]
 	BG_Delta = BG - BG_Previous
 
@@ -33,14 +34,7 @@ with open ("/root/myopenaps/monitor/temp_basal.json")as temp_basal_Data:
         temp_basal=round(d["rate"],1)
 
 
-Time_BG=Time_BG.replace("T", " ")
-Time_BG=Time_BG[0:19]
-Time_BG_py=datetime.datetime.strptime(Time_BG, "%Y-%m-%d %H:%M:%S")
-
-
-Time_Gap = datetime.datetime.now()-Time_BG_py
-(h, m, s) = str(Time_Gap).split(":")
-Time_Gap_Minutes = int(h)/60+int(m)
+Time_Gap_Minutes = (datetime.datetime.now()-Time_BG).total_seconds()/60
 
 if Time_Gap_Minutes < 15:
 
