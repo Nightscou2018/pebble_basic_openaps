@@ -40,6 +40,7 @@ else:
 libpebble2.Notifications(pebble).send_notification(msg_line1, msg_line2)
 #Notifications(pebble).send_notification(sys.argv[1], sys.argv[2])
 
+print ("{hostname}:").format(hostname=hostname)
 print ("----------")
 print (msg_line1)
 print (msg_line2)
