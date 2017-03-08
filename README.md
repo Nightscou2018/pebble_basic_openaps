@@ -52,11 +52,11 @@ Openaps
 
 Bluez
 
- sudo apt-get install bluez
+        sudo apt-get install bluez
                 
- Libpebble2
- 
-  pip install libpebble2
+Libpebble2
+
+        pip install libpebble2
 
 #Run before sending messages to the pebble 
 
