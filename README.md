@@ -60,11 +60,6 @@ Bluez
 Libpebble2
 
         pip install libpebble2
-        
-        Using bluetoothctl
-
-    
-
 
 #Run before sending messages to the pebble 
 
