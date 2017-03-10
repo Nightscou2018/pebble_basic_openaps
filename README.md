@@ -63,7 +63,7 @@ Libpebble2
 
 #Run before sending messages to the pebble 
 
-        nfig hci0 up
+        hciconfig hci0 up
         systemctl start bluetooth.service 
         rfcomm bind hci0 B0:B4:48:F4:F0:C5 #replace the MAC address with that of your pebble
 
