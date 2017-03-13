@@ -66,7 +66,12 @@ else:
 
 
 Notifications(pebble).send_notification(msg_line1, msg_line2)
-#Notifications(pebble).send_notification(sys.argv[1], sys.argv[2])
+
+# for future versions we can use below statement (replacing above line) using external parameters
+# Notifications(pebble).send_notification(sys.argv[1], sys.argv[2])
+
+# if you want to see the message when running from the terminal:
+# the pebble needs to be in proximity to the rig in order to avoid a timeout error
 
 print ("----------")
 print (msg_line1)
