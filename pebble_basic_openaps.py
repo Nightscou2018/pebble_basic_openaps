@@ -22,7 +22,6 @@ with open ("/root/myopenaps/monitor/glucose.json")as BG_Data:
         BG_Delta_str = str (BG_Delta)
         Time_Gap_Minutes = (datetime.datetime.now()-Time_BG).total_seconds()/60
 
-        Time_Gap_Minutes= 988.341
         if Time_Gap_Minutes < 60:
                 Time_Gap_str = str(int(Time_Gap_Minutes)) + "m"
         else:
