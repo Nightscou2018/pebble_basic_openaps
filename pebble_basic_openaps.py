@@ -5,11 +5,13 @@ from libpebble2.communication.transports.serial import SerialTransport
 from libpebble2.exceptions import TimeoutError
 from libpebble2.services.notifications import Notifications
 
-pebble = PebbleConnection(SerialTransport("/dev/rfcomm0"))
-pebble.connect()
-pebble.run_async()
 
-print(pebble.watch_info.serial)
+if sys.argv[1] != "0":
+
+	pebble = PebbleConnection(SerialTransport("/dev/rfcomm0"))
+	pebble.connect()
+	pebble.run_async()
+	print(pebble.watch_info.serial)
 
 hostname= socket.gethostname()
 
@@ -64,11 +66,17 @@ else:
 	msg_line1 = "Old Data: " + Time_Gap_str
 	msg_line2 = ""
 
-Notifications(pebble).send_notification(msg_line1, msg_line2)
-#Notifications(pebble).send_notification(sys.argv[1], sys.argv[2])
 
-
+if sys.argv[1] != "0":
+	
+	Notifications(pebble).send_notification(msg_line1, msg_line2)
+	#Notifications(pebble).send_notification(sys.argv[1], sys.argv[2])
+	
 print ("----------")
 print (msg_line1)
 print (msg_line2)
 print ("----------")
+print ("Time_Gap_Minutes: {}").format(Time_Gap_Minutes)
+print ("Battery: {}").format(Edison_Battery)
+print ("Dots: {}").format(Dots)
+
